@@ -1,7 +1,7 @@
 ## CodeBook
 
 The run_analysis.R script does the following to the downloaded data:
-## 1. Merge the training and the test sets to create one data set.
+### 1. Merge the training and the test sets to create one data set.
 by reading the training (X_train.txt, y_train.txt and subject_train.txt) and test data (X_test.txt, y_test.txt and subject_test.txt from the)
 and joining the two data together.
 
