@@ -62,7 +62,7 @@ ColumnNames <- colnames(TrainAndTest_MeanAndSD)
 ## check the labels before
 head(TrainAndTest_MeanAndSD, n = 2)
 
-## editting the label of the data set
+## editting the label of the data set and assign the new labels to the colname
 for (i in 1:length(ColumnNames)) 
 {
   ColumnNames[i] = gsub("^(t)","time",ColumnNames[i])
@@ -77,6 +77,7 @@ for (i in 1:length(ColumnNames))
   ColumnNames[i] = gsub("-std","StdDev",ColumnNames[i])
   ColumnNames[i] = gsub("-mean","Mean",ColumnNames[i])
 }
+colnames(TrainAndTest_MeanAndSD) <- ColumnNames
 
 ## check the labels after
 head(TrainAndTest_MeanAndSD, n = 2)
